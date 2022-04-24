@@ -34,15 +34,15 @@ In your terminal window (in the project folder) type: `uvicorn main:app`.
 
 Send a GET request through your REST client:
 
-**1. To get user data:**
+**1. To get user's data:**
 
-Copy the URL that uvicorn is running on. Add `/user_info?user=` after the URL and then the GitHub username. For example:
+Copy the URL that uvicorn is running on. Add `/user_info?login=` after the URL and then the GitHub username. For example:
 
-`http://127.0.0.1:8000/user_info?user=lukaszwelnic`
+`http://127.0.0.1:8000/user_info?login=lukaszwelnic`
 
 To authorize the API call you need to provide a token parameter like this:
 
-`http://127.0.0.1:8000/user_info?user=lukaszwelnic&token=*pasteyourtokenhere*`
+`http://127.0.0.1:8000/user_info?login=lukaszwelnic&token=*pasteyourtokenhere*`
 
 Sample output:
 
@@ -50,7 +50,7 @@ Sample output:
 {
     "login": "lukaszwelnic",
     "name": "Łukasz Wełnic",
-    "bio": "5th year Computer Science student (Distributed Systems/Computing)",
+    "bio": "5th year Computer Science student at Poznań University of Technology (Distributed Systems/Computing)",
     "languages_used": [
         {
             "language_name": "Java",
@@ -70,13 +70,13 @@ Sample output:
 
 **2. To get repositories data:**
 
-Copy the URL that uvicorn is running on. Add `/repositories_info?user=` after the URL and then the GitHub username. For example:
+Copy the URL that uvicorn is running on. Add `/repositories_info?login=` after the URL and then the GitHub username. For example:
 
-`http://127.0.0.1:8000/repositories_info?user=lukaszwelnic`
+`http://127.0.0.1:8000/repositories_info?login=lukaszwelnic`
 
 To authorize the API call you need to provide a token parameter like this:
 
-`http://127.0.0.1:8000/repositories_info?user=lukaszwelnic&token=*pasteyourtokenhere*`
+`http://127.0.0.1:8000/repositories_info?login=lukaszwelnic&token=*pasteyourtokenhere*`
 
 You can execute these API calls with an API rate limit.
 

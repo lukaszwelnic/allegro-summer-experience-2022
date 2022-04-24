@@ -1,5 +1,5 @@
 class UserData:
-    def __init__(self, login="", name="", bio="", repositories=None):
+    def __init__(self, login='', name='', bio='', repositories=None):
         if repositories is None:
             repositories = []
         self.user_login = login

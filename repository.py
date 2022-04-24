@@ -1,5 +1,5 @@
 class Repository:
-    def __init__(self, name="", languages=None):
+    def __init__(self, name='', languages=None):
         if languages is None:
             languages = {}
         self.repository_name = name

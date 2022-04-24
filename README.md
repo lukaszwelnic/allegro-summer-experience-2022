@@ -25,6 +25,8 @@ Fastapi: `pip install fastapi`
 
 Uvicorn: `pip install uvicorn`
 
+Requests: `pip install requests` *(If needed)*
+
 - REST client, e.g. Postman
 - Personal access token (generated through Developer Settings on your GitHub account - to access numerous GitHub API calls)
 

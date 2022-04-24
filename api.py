@@ -12,18 +12,17 @@ def fetching_failed_exception(status_code: int):
         detail=f'Code executed with status {status_code}. Fetching failed.')
 
 
-def fetch_user_data(user_login, token):
+def fetch_user_data(login, token):
 
     if token is None or token == '':
         headers = {'Authorization': ''}
     else:
         headers = {'Authorization': 'token ' + token}
 
-    url_user = 'https://api.github.com/users/' + user_login
+    url_user = 'https://api.github.com/users/' + login
 
-    url_repos = 'https://api.github.com/users/' + user_login + '/repos'
+    url_repos = 'https://api.github.com/users/' + login + '/repos'
 
-    login = None
     name = None
     bio = None
 
@@ -31,7 +30,6 @@ def fetch_user_data(user_login, token):
 
     if response_user.status_code == 200:
         data = response_user.json()
-        login = data['login']
         name = data['name']
         bio = data['bio']
     elif response_user.status_code == 404:

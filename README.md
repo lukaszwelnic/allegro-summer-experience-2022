@@ -30,7 +30,7 @@ Uvicorn: `pip install uvicorn`
 
 ### How to execute
 
-In your terminal window (in the project folder) type: `uvicorn main:app`.
+In your terminal window (in the project folder) type: `uvicorn api:app`.
 
 Send a GET request through your REST client:
 

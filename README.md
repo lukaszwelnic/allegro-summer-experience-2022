@@ -78,8 +78,6 @@ To authorize the API call you need to provide a token parameter like this:
 
 `http://127.0.0.1:8000/repositories_info?login=lukaszwelnic&token=*pasteyourtokenhere*`
 
-You can execute these API calls with an API rate limit.
-
 Sample output:
 
 ```JSON
@@ -106,3 +104,7 @@ Sample output:
     ]
 }
 ```
+
+### Disclaimer
+
+You can execute these API calls without authorization (token), but the API rate limit won't let you to do too many of them.

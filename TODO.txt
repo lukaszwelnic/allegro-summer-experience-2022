@@ -1,1 +1,1 @@
-# create tests
+# create tests (also if the server would not respond)
